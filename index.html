@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Parseing</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/parser.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script>   
+    $(function() {
+         $( "#calendar1" ).datepicker();   
+         $( "#calendar2" ).datepicker(); 
+    }); 
+</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+</head>
+<body onload="myFunction()">
+
+<form>
+From Date:<br>
+<p><input type="text" id="calendar1" /></p>
+To Date:<br>
+<p><input type="text" id="calendar2" /></p>
+<input type="button" id="myButton" value="View Records"/>
+</form>
+
+<body>
+ <table id="table">
+  <tr>
+    <th>Name</th>
+    <th>Full Name</th>
+    <th>Size</th>
+    <th>Created At</th>
+    <th>Language</th>
+    <th>Has Issues</th>
+    <th>Has Downloads</th>
+    <th>Watchers</th>
+  </tr>
+<div id="loading"><center><img src="images/ajax-loader.gif"></center></div>
+
+</table> 
+<br>
+	<input type="button" id="myButton2" value="Clear"/>
+</body>
+</html>
